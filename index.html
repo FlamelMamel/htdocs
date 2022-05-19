@@ -62,7 +62,7 @@
             <a href="javascript:void(0);" class="search">
                 <i class="fas fa-search"></i>
             </a>
-            <a href="register.html">
+            <a href="/register">
                 <i class="far fa-user"></i>
             </a>
         </div>
@@ -423,6 +423,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
   audio.src = "Click.mp3"
 
   $(document).ready(function (){
+	console.log('Hello, World!');
 	const lastSession = new Date(localStorage.time);/* getting date from LocalStorage */
 	var now = new Date();/* getting current date */
 	var seconds = (now - lastSession)/1000;/* minus the current time with the last entry. Result will be in ms, so
@@ -430,7 +431,10 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 	localStorage.time = now;/* adding current time to LocalStorage to use it later */
 	var email = localStorage.getItem("email");
 	var name = localStorage.getItem("name");
-	alert("Welcome back, " + name + ". Your last session was " + Math.round(seconds) + " seconds ago");
+	var nameCookie = document.cookie.replace(/(?:(?:^|.*;\s*)name\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+	if(nameCookie.length > 0){
+		alert("Welcome back, " + nameCookie + ". Your last session was " + Math.round(seconds) + " seconds ago");
+	}
 	})
 </script>
     

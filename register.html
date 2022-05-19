@@ -23,7 +23,7 @@
 
             <div id="square" class="tab" role="tabpanel">
                 <ul class="nav nav-tabs" role="tablist">
-                    <li><a href="index.html">home</a></li>
+                    <li><a href="/">home</a></li>
                     <li role="presentation" class="nav-link active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">sign in</a></li>
                     <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">sign up</a></li>
                 </ul>
@@ -45,7 +45,7 @@
                         </script>
 
                     <div role="tabpanel" class="tab-pane fade in active" id="Section1">
-                        <form class="form-horizontal" action="database/login.php" method="post">
+                        <form class="form-horizontal" action="/checkuser" method="post">
                             <br><br>
 
                             <div class="form-group">
@@ -85,7 +85,7 @@
                                 }
                         </script>
                             
-                            <form name="form" class="form-horizontal" method="post" action="/signup"> <!--Action to connection with mongoDB -->
+                            <form name="form" class="form-horizontal" method="post" action="/newuser"> <!--Action to connection with mongoDB -->
                             <div class="form-group">
                                 <label>Name</label>
                                 <input type="text" class="form-control" id="email2" name="name">  <!-- name -->
@@ -96,7 +96,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" id="pass2" name="password" onkeyup="pressButton()" onchange="checkValid(this.value)">
+                                <input type="password" class="form-control" id="pass2" name="password" onkeyup="pressButton()" oninput="checkValid(this.value)">
                                 <!-- function for check password -->
                             </div>
                             <div class="form-group">
@@ -136,17 +136,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 <script>
-    
     function putToLocal() {
         var email = document.getElementById("email2").value;
         localStorage.setItem('name', email);
     }
-   
 </script>
 
 
