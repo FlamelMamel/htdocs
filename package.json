@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookies": "^0.8.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "htdocs",
+  "version": "1.0.0",
+  "main": "admin.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

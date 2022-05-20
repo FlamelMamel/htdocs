@@ -1,5 +1,5 @@
 const mongodb = require('mongodb');
-const mongoClient = new mongodb.MongoClient('mongodb://localhost:27017', {
+const mongoClient = new mongodb.MongoClient('mongodb+srv://FlamelMamel:Hgnk5f8fr*@cluster0.hcy04.mongodb.net/?retryWrites=true&w=majority', {
     useUnifiedTopology: true
 });
 const Cookies = require('cookies');

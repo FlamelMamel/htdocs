@@ -1,0 +1,106 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #ececec;
+}
+table{
+    margin: 0 auto ;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+td{
+    background-color: #fff;
+    border: 3px solid rgb(248, 26, 92);
+    padding: 6px;
+    width: 170px;
+}
+
+.sort{
+    width: 600px;
+    color: #fff;
+    margin: 20px auto;
+    background-color: rgb(248, 26, 92);
+    text-align: center;
+}
+
+.sort a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.sort a:hover{
+    color: rgb(248, 26, 92);
+}
+
+#add{
+    margin-top: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    border: 2px solid rgb(248, 26, 92);
+    background-color: #ffc220;
+    color: #0071dc;
+    width: 800px;
+    transition: 0.3s ease;
+}
+
+#add:hover{
+    background-color: #fff;
+}
+
+.change{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: rgb(248, 26, 92);
+    color: #fff;
+    border: 2px solid rgb(248, 26, 92);
+    transition: 0.3s ease;
+    padding: 5px 10px;
+}
+
+.change:hover{
+    cursor: pointer;
+    color: rgb(248, 26, 92);
+    background-color: #fff;
+}
+
+.delete{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: rgb(248, 26, 92);
+    color: #fff;
+    border: 2px solid rgb(248, 26, 92);
+    padding: 5px 10px;
+    transition: 0.3s ease;
+}
+.delete:hover{
+    cursor: pointer;
+    color: rgb(248, 26, 92);
+    background-color: #fff;
+}
+
+form{
+    font-family: 'Rubik', sans-serif;
+}
+
+input{
+    font-family: 'Rubik', sans-serif;
+    border-radius: 5px;
+    border:0;
+    padding: 4px;
+
+}
+.admin{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.admin img{
+    margin-left: 20px;
+    width: 60px;
+}
