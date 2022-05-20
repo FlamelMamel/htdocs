@@ -27,7 +27,7 @@ app.get('/register', function(req, res){
     res.sendFile(path.join(__dirname, '/', 'register.html'));
 });
 
-app.post('/newuser', urlencodedParser, function(req, res){
+app.post('/addnewuser', urlencodedParser, function(req, res){
     mongoClient.connect(async function(error, mongo) {
         if (!error) {
             let db = mongo.db('candyshop');
